@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View, SafeAreaView } from "react-native";
+import AddBook from './app/components/AddBook';
+import AppRoute from "./navigation/AppRoute.js";
+import Booklist from "./app/components/Booklist.js";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+
+<AppRoute />
+  
+      
+      {/* <AddBook /> */}
+    {/* <Booklist /> */}
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // backgroundColor: '#ccd8da',
+    // alignItems: 'flex-start',
+    // justifyContent: 'flex-start',
   },
 });
