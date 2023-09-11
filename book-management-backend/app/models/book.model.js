@@ -1,4 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
+
     const Book = sequelize.define("book", {
         bookname: {
         type: Sequelize.STRING
@@ -13,8 +14,8 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.INTEGER
       },
       date: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW,
         allowNull: false,
       }
     });
