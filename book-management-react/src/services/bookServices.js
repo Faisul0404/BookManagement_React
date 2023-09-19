@@ -25,7 +25,7 @@ const remove = id => {
   };
 
   const findByBookname = bookname => {
-    return http.get(`/books?bookname=${bookname}`);
+    return http.get(`/?bookname=${bookname}`);
   };
 
   const bookServices = {

@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
    <header>
-    <h1> Book Management System</h1>
-    <hr />
+   
     <div className='links'>
     <NavLink to="/" className="link" activeClassName="active" exact>
         BookList
@@ -14,6 +13,9 @@ function Header() {
         AddBook
     </NavLink>
     </div>
+    <hr />
+    <h1> Book Management System</h1>
+    
    </header>
   )
 };

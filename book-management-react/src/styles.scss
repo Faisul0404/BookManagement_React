@@ -56,7 +56,25 @@ body {
   h2 {
     color: #666;
   }
+
   
+
+  .list-group-item.active {
+    background-color: #007bff; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    /* Add any other custom styles you want for the active state */
+  }
+ .formpadding {
+  padding-bottom: 10px;
+ }
+  .formButtonPadding {
+    padding-right: 10px;
+  }
+
+  .removeall {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 //   .main-content {
     // width: 80%;
     // margin: auto auto 100px auto;

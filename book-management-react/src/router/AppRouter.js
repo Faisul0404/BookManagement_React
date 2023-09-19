@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import BooksList from '../components/BooksList';
 import AddBook from '../components/AddBook';
+import "bootstrap/dist/css/bootstrap.min.css";
+import BookCard from '../components/BookCard';
+
 
 const AppRouter = () => {
     return (
@@ -11,8 +14,10 @@ const AppRouter = () => {
             <Header />
             
             <Routes>
-                <Route Component={BooksList} path="/" exact={true} />
+            <Route Component={BooksList} path="/" exact={true} />
+                <Route Component={BooksList} path="/books" exact={true} />
                 <Route Component={AddBook} path="/add" />
+                <Route Component={BookCard} path="books/:id" />
             </Routes>
                 
             
